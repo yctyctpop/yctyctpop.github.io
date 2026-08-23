@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
 subtitle: PhD Student in Economics, University at Albany, State University of New York
 
@@ -12,8 +12,11 @@ profile:
     <p>University at Albany, SUNY</p>
     <p>Albany, NY</p>
 
+research: > # shown in a "Research" section above Publications; TODO: fill in
+  <!-- TODO: add a short paragraph about your research agenda, job market paper (if applicable), and working papers. -->
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true # includes social/contact icons, shown under the profile photo
 
 announcements:
   enabled: true # includes a list of news items
