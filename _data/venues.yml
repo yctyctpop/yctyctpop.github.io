@@ -1,9 +1,9 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# badges shown next to each publication entry, keyed by the bibtex "abbr" field
+"Published":
+  color: "#2e7d32"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"R&R":
+  color: "#e08e00"
 
-"Vision":
-  color: "#009f36"
+"Working Paper":
+  color: "#828282"

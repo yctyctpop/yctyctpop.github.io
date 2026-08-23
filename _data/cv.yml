@@ -4,7 +4,7 @@ cv:
   email: cyuan4@albany.edu
   location: Albany, NY
   image: ""
-  summary: "" # TODO: add a one-line summary of your research focus
+  summary: Research in international finance, digital governance, and sustainable development economics.
 
   social_networks: [] # ORCID is already shown on the about page via _data/socials.yml
 
@@ -15,9 +15,6 @@ cv:
     postalCode: ""
     countryCode: US
 
-  # TODO: fill in the sections below with your real information.
-  # Delete any section you don't need (e.g. Awards, Volunteer, Certificates)
-  # See https://github.com/alshedivat/al-folio/blob/main/docs/CUSTOMIZE.md for field reference.
   sections:
     Education:
       - institution: University at Albany, State University of New York
@@ -26,16 +23,85 @@ cv:
         area: Economics
         studyType: PhD
         start_date: "" # TODO
-        end_date: "" # TODO (leave blank / "present" if ongoing)
+        end_date: "Present"
         score: ""
         courses: ""
         highlights: []
 
-    Experience: []
+    Experience:
+      - company: University at Albany, SUNY
+        position: Instructor
+        location: Albany, NY
+        start_date: "Fall 2025"
+        end_date: "Present"
+        summary: Recipient of the Thad Mirer Award for Outstanding Teaching.
+        highlights:
+          - "ECON 110 Principles of Economics I: Microeconomics (Undergraduate) — Fall 2026, Fall 2025"
+          - "ECON 111 Principles of Economics II: Macroeconomics (Undergraduate) — Fall 2026, Spring 2026, Fall 2025, Spring 2025"
+          - "ECON 360 International Economic Relations (Undergraduate) — Spring 2026"
 
-    Publications: []
+      - company: University at Albany, SUNY
+        position: Teaching Assistant
+        location: Albany, NY
+        start_date: "Spring 2023"
+        end_date: "Fall 2024"
+        highlights:
+          - "ECON 600 (PhD) — Fall 2024"
+          - "ECON 457/557 (Undergraduate) — Spring 2023"
 
-    Awards: []
+    Publications:
+      - title: The Impact of IMF Conditionality on Financial Risk
+        authors:
+          - Chuantai Yuan
+        publisher: Applied Economics
+        releaseDate: "2026"
+        summary: Sole author. ABDC ranking A. Published article.
+
+      - title: "Exploring the Role of Central Bank Digital Currency in Achieving Sustainable Development Goal 7: Evidence from Developing Countries"
+        authors:
+          - Chuantai Yuan
+          - Ren Gu
+        publisher: Sustainable Development
+        releaseDate: "2026"
+        summary: First author. JCR Q1. Published article.
+
+      - title: Digital Governance and Economic Development in Africa
+        authors:
+          - Chuantai Yuan
+          - Ren Gu
+        publisher: Applied Economics Letters
+        releaseDate: "2025"
+        summary: First author. ABDC ranking B. Published article.
+
+      - title: "Exploring the Role of Tourism Development in Achieving Sustainable Development Goal 7 (SDG 7): Evidence from Developing Countries"
+        authors:
+          - Chuantai Yuan
+          - Ren Gu
+        publisher: Sustainable Development
+        releaseDate: ""
+        summary: First author. JCR Q1. Revise and resubmit.
+
+      - title: "Making Ethnicity Visible: State Recognition, Hakka Language Policy, and Cohort Change in Taiwan"
+        authors:
+          - Chuantai Yuan
+          - Lifu Chang
+        publisher: Ethnicities
+        releaseDate: ""
+        summary: SSCI, SJR Q1. Revise and resubmit.
+
+      - title: The Impact of Tornadoes on Emergency Hospital Admissions in Texas
+        authors:
+          - Chuantai Yuan
+          - Chunyu Guo
+          - Kai Zhang
+        publisher: ""
+        releaseDate: ""
+        summary: Work in progress.
+
+    Awards:
+      - title: Thad Mirer Award for Outstanding Teaching
+        awarder: University at Albany, SUNY
+        date: ""
 
     Skills: []
 
