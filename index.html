@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Chuantai Yuan is a PhD student in Economics at the University at Albany, State University of New York."
+  >
+
+  <title>Chuantai Yuan</title>
+
+  <link rel="icon" href="assets/img/headshot.svg" type="image/svg+xml">
+
+  <style>
+    :root {
+      --text: #222222;
+      --muted: #626262;
+      --accent: #46166b;
+      --background: #ffffff;
+      --border: #dddddd;
+      --max-width: 1040px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(90%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 30px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .site-name {
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .intro-wrapper {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 70px;
+      align-items: center;
+      padding: 80px 0 70px;
+    }
+
+    .intro {
+      max-width: 720px;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 340px;
+      height: auto;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 6px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(48px, 7vw, 74px);
+    }
+
+    h2 {
+      margin: 0 0 38px;
+      font-size: 36px;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 23px;
+    }
+
+    .position {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 55px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .research-category {
+      margin: 50px 0 28px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      font-size: 26px;
+    }
+
+    .research-category:first-of-type {
+      margin-top: 0;
+    }
+
+    .paper {
+      margin-bottom: 48px;
+    }
+
+    .paper:last-child {
+      margin-bottom: 0;
+    }
+
+    .paper-title {
+      margin-bottom: 8px;
+    }
+
+    .paper p {
+      margin: 7px 0;
+    }
+
+    .coauthors {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .paper-status {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .paper-links {
+      display: flex;
+      gap: 10px;
+      margin: 11px 0;
+      font-size: 16px;
+    }
+
+    .section-note {
+      margin: -18px 0 38px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .teaching-list {
+      border-top: 1px solid var(--border);
+    }
+
+    .teaching-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 35px;
+      align-items: start;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .course-title {
+      margin: 0 0 4px;
+      font-size: 21px;
+    }
+
+    .course-institution {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .course-years {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    footer {
+      padding: 35px 0 50px;
+      color: var(--muted);
+      font-size: 15px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 760px) {
+      .navigation {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .intro-wrapper {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 55px;
+      }
+
+      .profile-photo {
+        width: 260px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .teaching-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .course-years {
+        text-align: left;
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navigation">
+
+      <a class="site-name" href="#top">
+        Chuantai Yuan
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="assets/pdf/cv.pdf" target="_blank">CV</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="top">
+
+    <div class="container">
+
+      <div class="intro-wrapper">
+
+        <div class="intro">
+
+          <h1>Chuantai Yuan</h1>
+
+          <p class="position">
+            PhD Student in Economics<br>
+            University at Albany, State University of New York
+          </p>
+
+          <p>
+            My research spans international finance, digital governance, and
+            applied microeconomics &mdash; examining topics from IMF
+            conditionality and central bank digital currencies to
+            tourism-driven sustainable development, digital governance in
+            Africa, and the public health effects of natural disasters.
+          </p>
+
+          <p>
+            Email: cyuan4[at]albany.edu
+          </p>
+
+          <p>
+            <a href="https://orcid.org/0009-0007-8025-1393" target="_blank" rel="noopener noreferrer">ORCID</a>
+          </p>
+
+        </div>
+
+        <img
+          class="profile-photo"
+          src="assets/img/headshot.svg"
+          alt="Chuantai Yuan"
+        >
+
+      </div>
+
+    </div>
+
+    <section id="research">
+
+      <div class="container">
+
+        <h2>Research</h2>
+
+        <h3 class="research-category">
+          Publications
+        </h3>
+
+        <article class="paper">
+
+          <h3 class="paper-title">
+            The Impact of IMF Conditionality on Financial Risk
+          </h3>
+
+          <p class="coauthors">
+            <strong>Yuan, C.</strong>
+          </p>
+
+          <p class="paper-status">
+            <em>Applied Economics</em>, 2026. (Sole author. ABDC ranking: A.)
+          </p>
+
+        </article>
+
+        <article class="paper">
+
+          <h3 class="paper-title">
+            Exploring the Role of Central Bank Digital Currency in Achieving
+            Sustainable Development Goal 7: Evidence from Developing
+            Countries
+          </h3>
+
+          <p class="coauthors">
+            <strong>Yuan, C.</strong>, &amp; Gu, R.
+          </p>
+
+          <p class="paper-status">
+            <em>Sustainable Development</em>, 2026. (First author. JCR Q1.)
+          </p>
+
+        </article>
+
+        <article class="paper">
+
+          <h3 class="paper-title">
+            Digital Governance and Economic Development in Africa
+          </h3>
+
+          <p class="coauthors">
+            <strong>Yuan, C.</strong>, &amp; Gu, R.
+          </p>
+
+          <p class="paper-status">
+            <em>Applied Economics Letters</em>, 2025. (First author. ABDC ranking: B.)
+          </p>
+
+        </article>
+
+        <h3 class="research-category">
+          Working Papers
+        </h3>
+
+        <article class="paper">
+
+          <h3 class="paper-title">
+            Exploring the Role of Tourism Development in Achieving
+            Sustainable Development Goal 7 (SDG 7): Evidence from Developing
+            Countries
+          </h3>
+
+          <p class="coauthors">
+            <strong>Yuan, C.</strong>, &amp; Gu, R.
+          </p>
+
+          <p class="paper-status">
+            Revise and resubmit at <em>Sustainable Development</em>. (First author. JCR Q1.)
+          </p>
+
+        </article>
+
+        <article class="paper">
+
+          <h3 class="paper-title">
+            Making Ethnicity Visible: State Recognition, Hakka Language
+            Policy, and Cohort Change in Taiwan
+          </h3>
+
+          <p class="coauthors">
+            <strong>Yuan, C.</strong>, &amp; Chang, L.
+          </p>
+
+          <p class="paper-status">
+            Revise and resubmit at <em>Ethnicities</em>. (SSCI, SJR Q1.)
+          </p>
+
+        </article>
+
+        <h3 class="research-category">
+          Work in Progress
+        </h3>
+
+        <article class="paper">
+
+          <h3 class="paper-title">
+            The Impact of Tornadoes on Emergency Hospital Admissions in Texas
+          </h3>
+
+          <p class="coauthors">
+            <strong>Yuan, C.</strong>, Guo, C., &amp; Zhang, K.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section id="teaching">
+
+      <div class="container">
+
+        <h2>Teaching</h2>
+
+        <p class="section-note">
+          Recipient of the Thad Mirer Award for Outstanding Teaching.
+        </p>
+
+        <div class="teaching-list">
+
+          <div class="teaching-item">
+            <div>
+              <h3 class="course-title">
+                ECON 110: Principles of Economics I &ndash; Microeconomics
+              </h3>
+              <p class="course-institution">
+                University at Albany, SUNY &mdash; Instructor
+              </p>
+            </div>
+            <p class="course-years">
+              2025, 2026
+            </p>
+          </div>
+
+          <div class="teaching-item">
+            <div>
+              <h3 class="course-title">
+                ECON 111: Principles of Economics II &ndash; Macroeconomics
+              </h3>
+              <p class="course-institution">
+                University at Albany, SUNY &mdash; Instructor
+              </p>
+            </div>
+            <p class="course-years">
+              2025, 2026
+            </p>
+          </div>
+
+          <div class="teaching-item">
+            <div>
+              <h3 class="course-title">
+                ECON 360: International Economic Relations
+              </h3>
+              <p class="course-institution">
+                University at Albany, SUNY &mdash; Instructor
+              </p>
+            </div>
+            <p class="course-years">
+              2026
+            </p>
+          </div>
+
+          <div class="teaching-item">
+            <div>
+              <h3 class="course-title">
+                ECON 600 (PhD)
+              </h3>
+              <p class="course-institution">
+                University at Albany, SUNY &mdash; Teaching Assistant
+              </p>
+            </div>
+            <p class="course-years">
+              2024
+            </p>
+          </div>
+
+          <div class="teaching-item">
+            <div>
+              <h3 class="course-title">
+                ECON 457/557
+              </h3>
+              <p class="course-institution">
+                University at Albany, SUNY &mdash; Teaching Assistant
+              </p>
+            </div>
+            <p class="course-years">
+              2023
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Chuantai Yuan
+    </div>
+  </footer>
+
+</body>
+
+</html>

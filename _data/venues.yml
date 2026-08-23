@@ -1,9 +1,0 @@
-# badges shown next to each publication entry, keyed by the bibtex "abbr" field
-"Published":
-  color: "#2e7d32"
-
-"R&R":
-  color: "#e08e00"
-
-"Working Paper":
-  color: "#828282"
