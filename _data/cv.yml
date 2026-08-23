@@ -1,0 +1,42 @@
+cv:
+  name: Chuantai Yuan
+  label: PhD Student in Economics
+  email: cyuan4@albany.edu
+  location: Albany, NY
+  image: ""
+  summary: "" # TODO: add a one-line summary of your research focus
+
+  social_networks: [] # ORCID is already shown on the about page via _data/socials.yml
+
+  address:
+    street: ""
+    city: Albany
+    region: New York
+    postalCode: ""
+    countryCode: US
+
+  # TODO: fill in the sections below with your real information.
+  # Delete any section you don't need (e.g. Awards, Volunteer, Certificates)
+  # See https://github.com/alshedivat/al-folio/blob/main/docs/CUSTOMIZE.md for field reference.
+  sections:
+    Education:
+      - institution: University at Albany, State University of New York
+        location: Albany, NY
+        url: https://www.albany.edu/
+        area: Economics
+        studyType: PhD
+        start_date: "" # TODO
+        end_date: "" # TODO (leave blank / "present" if ongoing)
+        score: ""
+        courses: ""
+        highlights: []
+
+    Experience: []
+
+    Publications: []
+
+    Awards: []
+
+    Skills: []
+
+    Languages: []
