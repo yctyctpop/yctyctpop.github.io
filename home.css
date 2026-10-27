@@ -45,6 +45,7 @@ h1 { font-size: 2rem; line-height: 1.2; font-weight: 600; margin-bottom: .25rem;
 section { margin-top: 1.5rem; }
 h2 { font-size: 1.375rem; line-height: 1.3; color: var(--accent); padding-bottom: .3rem; margin-bottom: .85rem; border-bottom: 1px solid var(--line); }
 h3, h4 { font-size: 1rem; line-height: 1.45; font-weight: 600; }
+.self-author { color: #000; font-weight: 500; }
 .dated-entry { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 1rem; margin-bottom: .65rem; }
 .dated-entry p { margin-top: .15rem; }
 .institution { font-weight: 500; color: var(--muted); }
